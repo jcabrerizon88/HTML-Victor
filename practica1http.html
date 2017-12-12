@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> hck8 (jose prueba) </title>
+  </head>
+  <body>
+    <h2 ALIGN="right"> HACK8  &copy;&reg;</h2>
+    <p ALIGN="right"> <b>&#8470;1</b> jose cabrerizo navarrete  </p>
+    <h1 ALIGN="center"> &#9758; ~ BIENVENIDOS A MI MUNDO ~ &#9756; </h1>
+    <link rel="stylesheet" type="text/css" href="practica1http.css"/>
+    <center>
+      <img src=Anonymous.png border=0>
+    </center>
+      <h1 ALIGN="center"><i> EJERCICIO DE HTTP/HTTPs &#9786; </i></h1>
+    <hr>
+<p><b> Peticiones desde el shell </b></p>
+<p> 1.Utilice las siguientes herramientas para descargar un fichero y navegar desde el shell: </p>
+<ul>
+<li> curl </li>
+<img src=curl.jpg width="500" height="400" />
+<li> wget </li>
+<p>  </p>
+<li> lynx </li>
+<img src=lynx.jpg width="500" height="400" />
+<li> links </li>
+<img src=links.jpg width="500" height="400" />
+</ul>
+  <hr>
+<p><b> Versión del protocolo HTTP </b></p>
+<p> 1.Utilice las herramientas de desarrollo del navegador Firefox para obtener información sobre la versión del protocolo HTTP utilizado en los siguientes servicios.</p>
+    <table class="egt" border="1px solid black">
+    <tr>
+      <th scope="prueba" bgcolor="#00FF00"> Página </th>
+      <th bgcolor="#ee6e6e">HTTP/HTTS</th>
+      <th bgcolor="#ee6e6e">Versión</th>
+      <th bgcolor="#ee6e6e">Solicitudes</th>
+      <th bgcolor="#ee6e6e">Tiempo (finalizado)</th>
+      <th bgcolor="#ee6e6e">Server</th>
+      <th bgcolor="#ee6e6e">Content-Encoding</th>
+      <th bgcolor="#ee6e6e">Strict-Transport-Security</th>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">elpuig.xeill.net</td>
+      <td ALIGN="center"> https </td>
+      <td> http/1.1 </td>
+      <td> 21 requests </td>
+      <td ALIGN="center"> Finish: 25.217.927,91 min </td>
+      <td ALIGN="center"> Zope/(2.13.20, python 2.7.3, linux2) ZServer/1.1 </td>
+      <td ALIGN="center"> gzip </td>
+      <td ALIGN="center"> max-age=15768000 </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">ru.wikipedia.org</td>
+      <td ALIGN="center"> https </td>
+      <td > http/2.0 </td>
+      <td> 41 requests </td>
+      <td ALIGN="center"> Finish: 1,44 min </td>
+      <td ALIGN="center"> mw1321.eqiad.wmnet </td>
+      <td ALIGN="center"> gzip </td>
+      <td ALIGN="center"> max-age=106384710 </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">elpais.com</td>
+      <td ALIGN="center"> https </td>
+      <td> http/2.0 </td>
+      <td> 648 requests </td>
+      <td ALIGN="center"> Finish: 2,09 min </td>
+      <td ALIGN="center"> nginx/1.3.5 epet/0.8.0.2 </td>
+      <td ALIGN="center"> gzip </td>
+      <td ALIGN="center"> ------- </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">www.lavanguardia.com</td>
+      <td ALIGN="center"> http </td>
+      <td> http/1.1  </td>
+      <td> 650 requests </td>
+      <td ALIGN="center"> Finish: 1,08 min </td>
+      <td ALIGN="center"> nginx </td>
+      <td ALIGN="center"> gzip </td>
+      <td ALIGN="center"> ------- </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">www.google.es</td>
+      <td ALIGN="center"> https </td>
+      <td> http/2.0 </td>
+      <td> 35 requests </td>
+      <td ALIGN="center"> Finish: 6,58 s </td>
+      <td ALIGN="center"> gws </td>
+      <td ALIGN="center"> br </td>
+      <td ALIGN="center"> max-age=3600 </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">www.youtube.com</td>
+      <td ALIGN="center"> https </td>
+      <td> http/2.0 </td>
+      <td> 164 requests </td>
+      <td ALIGN="center"> Finish: 2,20 min </td>
+      <td ALIGN="center"> YouTube Frontend Proxy </td>
+      <td ALIGN="center"> br </td>
+      <td ALIGN="center"> max-age=31536000 </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">h2o.examp1e.net</td>
+      <td ALIGN="center"> https </td>
+      <td> http/2.0 </td>
+      <td> 20 requests </td>
+      <td ALIGN="center"> Finish: 5,33 s </td>
+      <td ALIGN="center"> h2o/2.3.0-DEV </td>
+      <td ALIGN="center"> ------- </td>
+      <td ALIGN="center"> ------- </td>
+    </tr>
+    <tr>
+      <td ALIGN="center" bgcolor="#33f3ff">caddyserver.com</td>
+      <td ALIGN="center"> https </td>
+      <td> http/2.0 </td>
+      <td> 28 requests </td>
+      <td ALIGN="center"> Finish: 2,38 s </td>
+      <td ALIGN="center"> Caddy </td>
+      <td ALIGN="center"> gzip </td>
+      <td ALIGN="center"> max-age=31536000 </td>
+    </tr>
+    </table>
+  <p> 2.Utilice las herramientas del desarrollador de Chromium para: </p>
+  <ul>
+<li> Activar el soporte para QUIC en la URL: chrome://flags/#enable-quic </li>
+<p>  </p>
+<li> Observar el uso de QUIC en la URL: chrome://net-internals/#quic </li>
+<p>  </p>
+<li> Determinar qué servicios (de los de la lista anterior) utilizan QUIC </li>
+<p>  </p>
+</ul>
+<p> 3.Consulte en el sitio HTTP Archive: </p>
+<ul>
+  <li> El total transferido y el número de peticiones </li>
+  <img src="total1.jpg" alt=" El total transferido y el número de peticiones ">
+  <li> El uso de HTTPS </li>
+  <img src="usohtml.jpg" alt=" El uso de HTTPS ">
+  <li> El uso de compresión </li>
+  <img src="compre.jpg" alt=" El uso de compresión ">
+</ul>
+<hr>
+<p><b> Rendimiento </b></p>
+<p> 1.El comando ab forma parte de las herramientas que acompañan al servidor web Apache y permite generar peticiones concurrentes para poner a prueba un servidor. </p>
+- Por ejemplo, para solicitar 1000 veces con un nivel de concurrencia de 25 la página web del centro se puede escribir:
+<h4> ab -n 1000 -c 25 https://elpuig.xeill.net/ </h4>
+<p> 2.Utilice el comando ab para solicitar las siguientes webs: </p>
+<ul>
+  <li> https://elpuig.xeill.net/ </li>
+  <p> </p>
+  <li> https://ru.wikipedia.org/ (ab -n 1000 -c 25 https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0) </li>
+  <p> </p>
+  <li> https://www.google.es/ </li>
+  <p> </p>
+</ul>
+<p> 3.rellenar la siguiente tabla: </p>
+<table class="egt" border="1px solid black">
+<tr>
+  <th scope="prueba" bgcolor="#00FF00"> Server hostname </th>
+  <th bgcolor="#ee6e6e"> Server software </th>
+  <th bgcolor="#ee6e6e"> SSL/TLS Protocol </th>
+  <th bgcolor="#ee6e6e"> Document length </th>
+  <th bgcolor="#ee6e6e"> Time taken </th>
+  <th bgcolor="#ee6e6e"> Failed request </th>
+  <th bgcolor="#ee6e6e"> Requests per second </th>
+  <th bgcolor="#ee6e6e"> Strict-Transport-Security </th>
+</tr>
+<tr>
+  <td bgcolor="#33f3ff">elpuig.xeill.net</td>
+  <td> Zope/(2.13.20 </td>
+  <td> TLSv1.2,ECDHE-RSA-AES256-GCM-SHA384,2048,256 </td>
+  <td> 31542 bytes </td>
+  <td></td>
+  <td> 0 </td>
+  <td> 25.46 [#/sec] (mean) </td>
+  <td> max-age=15768000 </td>
+</tr>
+<tr>
+  <td bgcolor="#33f3ff">ru.wikipedia.org</td>
+  <td> mw1184.eqiad.wmnet </td>
+  <td> TLSv1.2,ECDHE-ECDSA-AES256-GCM-SHA384,256,256 </td>
+  <td> 162297 bytes </td>
+  <td> 47.573 seconds </td>
+  <td> 0 </td>
+  <td> 21.02 [#/sec] (mean) </td>
+  <td> max-age=106384710 </td>
+</tr>
+<tr>
+  <td bgcolor="#33f3ff">www.google.es</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+</table>
+<p> 4.Instale el paquete <b> nghttp2 </b> y utilice la herramienta <b> h2load </b> para hacer peticiones HTTP/2 a los siguientes servidores web: </p>
+<hr>
+<p><b> HTTPS </b></p>
+<p> 1.Utilice la página https://www.ssllabs.com/ssltest/ para obtener un informe de: </p>
+<ol>
+<li value="1"> elpuig.xeill.net </li>
+<li> ru.wikipedia.org </li>
+<li> www.google.es </li>
+</ol>
+<table class="egt" border="1px solid black">
+<tr>
+<th scope="prueba" bgcolor="#00FF00"> Web </th>
+<th bgcolor="#ee6e6e"> Overall rating </th>
+<th bgcolor="#ee6e6e"> HSTS </th>
+<th bgcolor="#ee6e6e"> Issuer </th>
+<th bgcolor="#ee6e6e"> Protocols </th>
+</tr>
+<tr>
+<td bgcolor="#33f3ff">elpuig.xeill.net</td>
+<td></td>
+<td> max-age=15768000 </td>
+<td> Let's Encrypt Authority X3 AIA: http://cert.int-x3.letsencrypt.org/ <b>(DST Root CA X3)</b></td>
+<td> TLS 1.2 </td>
+</tr>
+<tr>
+<td bgcolor="#33f3ff">ru.wikipedia.org</td>
+<td></td>
+<td> max-age=106384710 </td>
+<td> Issuer 	GlobalSign Organization Validation CA - SHA256 - G2 AIA: http://secure.globalsign.com/cacert/gsorganizationvalsha2g2r1.crt <b>(GlobalSign)</b></td>
+<td> TLS 1.2 </br> TLS 1.1 </br> TLS 1.0 </td>
+<td></td>
+</tr>
+<tr>
+<td bgcolor="#33f3ff">www.google.es</td>
+<td></td>
+<td></td>
+<td></td>
+<td> </td>
+<td></td>
+</tr>
+</table>
+<p> 2.Utilice las herramientas <b> cipherscan </b> y <b> TLS Observatory </b> para obtener informes de las tres páginas anteriores. </p>
+<hr>
+<p><b> Enlaces: </b></p>
+<ul>
+  <li><a href="HTTP/2 explained"> HTTP/2 explained </a></li>
+  <li><a href="Demos Go + HTTP/2"> Demos Go + HTTP/2 </a></li>
+  <li><a href="HTTP Archive (estadísticas de uso)"> HTTP Archive (estadísticas de uso) </a></li>
+  <li><a href="Mozilla wiki: Server side TLS"> Mozilla wiki: Server side TLS </a></li>
+  <li><a href="cipherscan. Script para análisis de servidores HTTPS"> cipherscan. Script para análisis de servidores HTTPS </a></li>
+  <li><a href="TLS Observatory"> TLS Observatory </a></li>
+</ul>
+  </body>
+</html>
